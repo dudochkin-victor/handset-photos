@@ -1,0 +1,10 @@
+Makefile
+meegophotos
+*.pro.user
+.gen
+.moc
+.obj
+src/gen_*
+src/photos_adaptor.*
+src/flickr_interface.*
+translations/meegophotos.qm

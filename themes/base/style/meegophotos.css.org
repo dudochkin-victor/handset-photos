@@ -1,0 +1,1526 @@
+/*
+MSceneWindowStyle#statusBar
+{
+    minimum-size: 100% 3mm;
+    preferred-size: 100% 3mm;
+    maximum-size: 100% 3mm;
+    background-color: #000000;
+}
+
+MApplicationPageStyle.Landscape {
+    minimum-size: 100% 100%;
+    preferred-size: 100% 100%;
+    maximum-size: 100% 100%;
+    margin-left:0;
+    margin-right:0;
+    margin-top:0;
+    margin-bottom:0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+
+    background-image:;
+    background-color:;
+    background-opacity:0.0;
+}
+
+DuiApplicationPageStyle.Portrait {
+    minimum-size: 100% 100%;
+    preferred-size: 100% 100%;
+    maximum-size: 100% 100%;
+
+    background-image:;
+    background-color: #464646;
+}
+
+#homeButton {
+    background-image: "toolbar-home-normal";
+    background-color:;
+
+    minimum-size: 74px 75px;
+    preferred-size: 74px 75px;
+    maximum-size: 74px 75px;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    vertical-align: top;
+}
+
+#homeButton:pressed {
+    background-image: "toolbar-home-down";
+    background-color:;
+
+    minimum-size: 74px 75px;
+    preferred-size: 74px 75px;
+    maximum-size: 74px 75px;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    vertical-align: top;
+}
+
+
+#ThumbnailButton {
+    margin-left: 10;
+    margin-right: 10;
+    margin-top: 10;
+    margin-bottom: 10;
+
+    background-image:;
+}
+
+#ToolbarContainer {
+    background-color: blue;
+
+    minimum-size: 100% 10%;
+    preferred-size: 100% 10%;
+    maximum-size: 100% 10%;
+}
+
+#ToolbarOverlay {
+    background-color: #212121;
+}
+
+#ToolbarOverlay.Landscape {
+    minimum-size: 100% -1;
+    preferred-size: 100% -1;
+    maximum-size: 100% -1;
+
+    vertical-align: bottom;
+    horizontal-align: left;
+    offset: 0 0;
+}
+
+#ToolbarOverlay.Portrait {
+    minimum-size: 100% -1;
+    preferred-size: 100% -1;
+    maximum-size: 100% -1;
+
+    vertical-align: bottom;
+    horizontal-align: left;
+    offset: 0 0;
+}
+
+
+#PhotoStripDetailsViewport {
+
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+
+    pan-threshold: 15.0;
+    pan-click-threshold: 0.2;
+    pointer-spring-k: 0.6;
+    friction-c: 0.9;
+    sliding-friction-c: 0.9;
+    border-spring-k: 0.9;
+    border-friction-c: 0.9;
+}
+
+#PhotoStripDetailsViewport.Portrait {
+    minimum-size: 100% 100%;
+    maximum-size: 100% 100%;
+    preferred-size: 100% 100%;
+
+}
+
+@const SINGLE_PHOTO_H: 100%;
+#PhotoStripDetailsViewport.Landscape {
+    minimum-size: 100% $SINGLE_PHOTO_H;
+    maximum-size: 100% $SINGLE_PHOTO_H;
+    preferred-size: 100% $SINGLE_PHOTO_H;
+}
+
+#PhotoStrip {
+    background-color: #212121;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+}
+#PhotoStrip.Portrait {
+    snap-interval: -1;
+    minimum-size: -1 -1;
+    maximum-size: -1 -1;
+    preferred-size: -1 -1;
+}
+#PhotoStrip.Landscape {
+    snap-interval: -1;
+    minimum-size: 100% $SINGLE_PHOTO_H;
+    maximum-size: 100% $SINGLE_PHOTO_H;
+    preferred-size: 100% $SINGLE_PHOTO_H;
+}
+
+#PhotoStripImage {
+    minimum-size: 100% $SINGLE_PHOTO_H;
+    maximum-size: 100% $SINGLE_PHOTO_H;
+    preferred-size: 100% $SINGLE_PHOTO_H;
+
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+}
+
+StripImageStyle {
+    minimum-size: 100% $SINGLE_PHOTO_H;
+    maximum-size: 100% $SINGLE_PHOTO_H;
+    preferred-size: 100% $SINGLE_PHOTO_H;
+
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+StripImageStyle.Landscape:small {
+    minimum-size: 100% $SINGLE_PHOTO_H;
+    maximum-size: 100% $SINGLE_PHOTO_H;
+    preferred-size: 100% $SINGLE_PHOTO_H;
+
+    margin-top: 135;
+    margin-left: 0;
+    margin-bottom: 100;
+    margin-right: 0;
+
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+
+StripImageStyle.Portrait:small {
+    minimum-size: 100% $SINGLE_PHOTO_H;
+    maximum-size: 100% $SINGLE_PHOTO_H;
+    preferred-size: 100% $SINGLE_PHOTO_H;
+
+    margin-top: 160;
+    margin-left: 0;
+    margin-bottom: 100;
+    margin-right: 0;
+
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+#AllPhotos {
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+#thumbnailList {
+  minimum-size: 100% 100%;
+  maximum-size: 100% 100%;
+  preferred-size: 100% 100%; /*seems not working here */
+  background-color: #dadcd9;
+
+  margin-left:  0; 
+  margin-right:  0;
+  margin-top:    0;
+  margin-bottom: 0; 
+
+  padding-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+@const THUMBNAIL_CELL_SIZE: 108px;
+@const THUMBNAIL_CELL_SIZE_H: 108px;
+
+@const THUMBNAIL_SELECTED_CELL_SIZE: 88px;
+@const THUMBNAIL_SELECTED_CELL_SIZE_H: 88px;
+
+@const THUMBNAIL_CELL_SIZE_PORT: 96px;
+@const THUMBNAIL_CELL_SIZE_H_PORT: 96px;
+#photoThumbnail_Landscape {
+  background-image:;
+
+  background-image-center :; 
+
+/*  background-image-single : "photo_thumb_frame_Large";  */
+  background-opacity: 1.0;
+
+  minimum-size: $THUMBNAIL_CELL_SIZE $THUMBNAIL_CELL_SIZE_H;
+  preferred-size: $THUMBNAIL_CELL_SIZE $THUMBNAIL_CELL_SIZE_H;
+  maximum-size: $THUMBNAIL_CELL_SIZE $THUMBNAIL_CELL_SIZE_H;
+
+  image-object-name: "PhotoThumbnailImage";
+  padding-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0px;
+  margin-left:  0; 
+  margin-right:  0;
+  margin-top:    0;
+  margin-bottom: 0; 
+
+
+
+}
+
+#photoThumbnail_Landscape:selected {
+  background-image:;
+
+  background-image-center :; 
+
+/*  background-image-single : "photo_thumb_frame_Large";  */
+  background-opacity: 1.0;
+
+  minimum-size: $THUMBNAIL_CELL_SIZE $THUMBNAIL_CELL_SIZE_H;
+  preferred-size: $THUMBNAIL_CELL_SIZE $THUMBNAIL_CELL_SIZE_H;
+  maximum-size: $THUMBNAIL_CELL_SIZE $THUMBNAIL_CELL_SIZE_H;
+
+  image-object-name: "PhotoThumbnailImageSelected";
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  margin-left:  0; 
+  margin-right:  0;
+  margin-top:    0;
+  margin-bottom: 0; 
+}
+
+
+#photoThumbnail_Portrait {
+  background-image:;
+
+  background-image-center :; 
+
+/*  background-image-single : "photo_thumb_frame_Large";  */
+  background-opacity: 1.0;
+
+  minimum-size: $THUMBNAIL_CELL_SIZE_PORT $THUMBNAIL_CELL_SIZE_H_PORT;
+  preferred-size: $THUMBNAIL_CELL_SIZE_PORT $THUMBNAIL_CELL_SIZE_H_PORT;
+  maximum-size: $THUMBNAIL_CELL_SIZE_PORT $THUMBNAIL_CELL_SIZE_H_PORT;
+
+  image-object-name: "PhotoThumbnailImage";
+  padding-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0px;
+  margin-left:  0; 
+  margin-right:  0;
+  margin-top:    0;
+  margin-bottom: 0; 
+
+
+
+}
+
+#photoThumbnail_Portrait:selected {
+  background-image:;
+
+  background-image-center :; 
+
+/*  background-image-single : "photo_thumb_frame_Large";  */
+  background-opacity: 1.0;
+
+  minimum-size: $THUMBNAIL_CELL_SIZE_PORT $THUMBNAIL_CELL_SIZE_H_PORT;
+  preferred-size: $THUMBNAIL_CELL_SIZE_PORT $THUMBNAIL_CELL_SIZE_H_PORT;
+  maximum-size: $THUMBNAIL_CELL_SIZE_PORT $THUMBNAIL_CELL_SIZE_H_PORT;
+
+  image-object-name: "PhotoThumbnailImageSelected";
+  padding-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0px;
+  margin-left:  0; 
+  margin-right:  0;
+  margin-top:    0;
+  margin-bottom: 0; 
+
+
+
+}
+
+#photoListWrapper {
+  padding-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0px;
+  margin-left:  0px; 
+  margin-right:  0;
+  margin-top:    0;
+  margin-bottom: 0; 
+
+
+}
+/*
+#photoThumbnail:pressed {
+  background-image : "duilist-singlecolumn-center-background-pressed" 8px 8px 8px 8px;
+
+  background-image-top-left : "duilist-topleft-background-pressed" 8px 8px 8px 8px;
+  background-image-top : "duilist-top-background-pressed" 8px 8px 8px 8px;
+  background-image-top-right : "duilist-topright-background-pressed" 8px 8px 8px 8px;
+  background-image-left : "duilist-left-background-pressed" 8px 8px 8px 8px;
+  background-image-center : "duilist-center-background-pressed" 8px 8px 8px 8px;
+  background-image-right : "duilist-right-background-pressed" 8px 8px 8px 8px;
+  background-image-bottom-left : "duilist-bottomleft-background-pressed" 8px 8px 8px 8px;
+  background-image-bottom : "duilist-bottom-background-pressed" 8px 8px 8px 8px;
+  background-image-bottom-right : "duilist-bottomright-background-pressed" 8px 8px 8px 8px;
+
+  background-image-single : "duilist-single-background-pressed" 8px 8px 8px 8px;
+
+  background-image-singlerow-left : "duilist-singlerow-left-background-pressed" 8px 8px 8px 8px;
+  background-image-singlerow-center : "duilist-singlerow-center-background-pressed" 8px 8px 8px 8px;
+  background-image-singlerow-right : "duilist-singlerow-right-background-pressed" 8px 8px 8px 8px;
+
+  background-image-singlecolumn-top : "duilist-singlecolumn-top-background-pressed" 8px 8px 8px 8px;
+  background-image-singlecolumn-center : "duilist-singlecolumn-center-background-pressed" 8px 8px 8px 8px;
+  background-image-singlecolumn-bottom : "duilist-singlecolumn-bottom-background-pressed" 8px 8px 8px 8px;
+
+  background-color: #212121;
+  background-opacity: 1.0;
+  image-object-name: "PhotoThumbnailImage";
+}
+    */
+
+@const THUMBNAIL_SIZE: 108px;
+@const THUMBNAIL_SELECTED_SIZE: 88px;
+@const THUMBNAIL_SIZE_PORT: 96px;
+@const THUMBNAIL_SELECTED_SIZE_PORT: 76px;
+#PhotoThumbnailImage.Landscape {
+  /* inherited from DuiWidgetStyle */
+  minimum-size: $THUMBNAIL_SIZE $THUMBNAIL_SIZE;
+  preferred-size: $THUMBNAIL_SIZE $THUMBNAIL_SIZE;
+  maximum-size: $THUMBNAIL_SIZE $THUMBNAIL_SIZE;
+
+  margin-left:  0; 
+  margin-right:  0;
+  margin-top:    0;
+  margin-bottom: 0; 
+  padding-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0;
+
+
+
+}
+
+#PhotoThumbnailImageSelected.Landscape {
+  /* inherited from DuiWidgetStyle */
+  minimum-size: $THUMBNAIL_SELECTED_SIZE $THUMBNAIL_SELECTED_SIZE;
+  preferred-size: $THUMBNAIL_SELECTED_SIZE $THUMBNAIL_SELECTED_SIZE;
+  maximum-size: $THUMBNAIL_SELECTED_SIZE $THUMBNAIL_SELECTED_SIZE;
+
+  margin-left:  0; 
+  margin-right:  0;
+  margin-top:    0;
+  margin-bottom: 0; 
+  padding-left: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+#PhotoThumbnailImage.Portrait {
+  /* inherited from DuiWidgetStyle */
+  minimum-size: $THUMBNAIL_SIZE_PORT $THUMBNAIL_SIZE_PORT;
+  preferred-size: $THUMBNAIL_SIZE_PORT $THUMBNAIL_SIZE_PORT;
+  maximum-size: $THUMBNAIL_SIZE_PORT $THUMBNAIL_SIZE_PORT;
+    padding-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0;
+
+
+  margin-left:  0; 
+  margin-right:  0;
+  margin-top:    0;
+  margin-bottom: 0; 
+}
+
+#PhotoThumbnailImageSelected.Portrait {
+  /* inherited from DuiWidgetStyle */
+  minimum-size: $THUMBNAIL_SELECTED_SIZE_PORT $THUMBNAIL_SELECTED_SIZE_PORT;
+  preferred-size: $THUMBNAIL_SELECTED_SIZE_PORT $THUMBNAIL_SELECTED_SIZE_PORT;
+  maximum-size: $THUMBNAIL_SELECTED_SIZE_PORT $THUMBNAIL_SELECTED_SIZE_PORT;
+    padding-left: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+
+
+  margin-left:  0; 
+  margin-right:  0;
+  margin-top:    0;
+  margin-bottom: 0; 
+}
+
+#TopOverlay {
+    /* background-color: #464646; */
+    background-image:;
+    background-color:;
+    background-opacity:0.0;
+	minimum-size: 100% -1;
+	preferred-size: 100% -1;
+	maximum-size: 100% -1;
+
+	margin-left: 0;
+	margin-top: 30px;
+	margin-right: 0;
+	margin-bottom: 0;
+	padding-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0;
+
+	text-margin-left: 0;
+	text-margin-top: 0;
+	text-margin-right: 0;
+	text-margin-bottom: 0;
+	/* vertical-align: center; */
+    offset: 0, 60;
+}
+
+#firstRowInTopOverlay {
+    background-image: "landscape-topbar-bg";
+    background-color:;
+/*    background-opacity:.0; */
+    minimum-size: 864px 75px;
+    preferred-size: 864px 75px;
+    maximum-size: 864px 75px;
+
+}
+
+#allPhotosButtonActive.Landscape {
+     background-image: "landscape-topbar-tab-selected-bg";
+     background-color:;
+     text-color: #ecb933;
+
+     minimum-size: 178px 75px;
+     preferred-size: 178px 75px;
+     maximum-size: 178px 75px;
+     vertical-align: top;
+
+     margin-left: 0;
+     margin-top: 0;
+     margin-right: 0;
+     margin-bottom: 0;
+     padding-left: 0;
+     padding-top: 0;
+     padding-right: 0;
+     padding-bottom: 0;
+}
+
+#allPhotosButtonActive.Portrait {
+     background-image: "landscape-topbar-tab-selected-bg";
+     background-color:;
+     text-color: #ecb933;
+
+     minimum-size: 131px 75px;
+     preferred-size: 131px 75px;
+     maximum-size: 131px 75px;
+     vertical-align: top;
+
+     text-margin-left:0;
+     text-margin-right:0;
+     margin-left: 0;
+     margin-top: 0;
+     margin-right: 0;
+     margin-bottom: 0;
+     padding-left: 0;
+     padding-top: 0;
+     padding-right: 0;
+     padding-bottom: 0;
+}
+
+
+#allPhotosButtonInactive.Landscape {
+     background-image: "landscape-topbar-tab-normal-bg";
+     background-color:;
+     text-color: #d6d6d6;
+
+     minimum-size: 178px 75px;
+     preferred-size: 178px 75px;
+     maximum-size: 178px 75px;
+     vertical-align: top;
+
+     margin-left: 0;
+     margin-top: 0;
+     margin-right: 0;
+     margin-bottom: 0;
+     padding-left: 0;
+     padding-top: 0;
+     padding-right: 0;
+     padding-bottom: 0;
+}
+
+#allPhotosButtonInactive.Portrait {
+     background-image: "landscape-topbar-tab-normal-bg";
+     background-color:;
+     text-color: #d6d6d6;
+
+     minimum-size: 131px 75px;
+     preferred-size: 131px 75px;
+     maximum-size: 131px 75px;
+     vertical-align: top;
+
+     text-margin-left:0;
+     text-margin-right:0;
+     margin-left: 0;
+     margin-top: 0;
+     margin-right: 0;
+     margin-bottom: 0;
+     padding-left: 0;
+     padding-top: 0;
+     padding-right: 0;
+     padding-bottom: 0;
+}
+
+#albumsButtonActive.Landscape {
+     background-image: "landscape-topbar-tab-selected-bg";
+     background-color:;
+     text-color: #ecb933;
+
+     minimum-size: 178px 75px;
+     preferred-size: 178px 75px;
+     maximum-size: 178px 75px;
+     vertical-align: top;
+
+     margin-left: 0;
+     margin-top: 0;
+     margin-right: 0;
+     margin-bottom: 0;
+     padding-left: 0;
+     padding-top: 0;
+     padding-right: 0;
+     padding-bottom: 0;
+}
+
+#albumsButtonActive.Portrait {
+     background-image: "landscape-topbar-tab-selected-bg";
+     background-color:;
+     text-color: #ecb933;
+
+     minimum-size: 127px 75px;
+     preferred-size: 127px 75px;
+     maximum-size: 127px 75px;
+     vertical-align: top;
+
+     margin-left: 0;
+     margin-top: 0;
+     margin-right: 0;
+     margin-bottom: 0;
+     padding-left: 0;
+     padding-top: 0;
+     padding-right: 0;
+     padding-bottom: 0;
+}
+
+#albumsButtonInactive.Landscape {
+     background-image: "landscape-topbar-tab-normal-bg";
+     background-color:;
+     text-color: #d6d6d6;
+
+     minimum-size: 178px 75px;
+     preferred-size: 178px 75px;
+     maximum-size: 178px 75px;
+     vertical-align: top;
+
+     margin-left: 0;
+     margin-top: 0;
+     margin-right: 0;
+     margin-bottom: 0;
+     padding-left: 0;
+     padding-top: 0;
+     padding-right: 0;
+     padding-bottom: 0;
+}
+
+#albumsButtonInactive.Portrait {
+     background-image: "landscape-topbar-tab-normal-bg";
+     background-color:;
+     text-color: #d6d6d6;
+
+     minimum-size: 127px 75px;
+     preferred-size: 127px 75px;
+     maximum-size: 127px 75px;
+     vertical-align: top;
+
+     margin-left: 0;
+     margin-top: 0;
+     margin-right: 0;
+     margin-bottom: 0;
+     padding-left: 0;
+     padding-top: 0;
+     padding-right: 0;
+     padding-bottom: 0;
+}
+
+
+
+#TopToolbarButtonActive {
+     background-image: "landscape-topbar-tab-selected-bg";
+     background-color:;
+     font: "Droid Sans" 2mm;
+     text-color: #ecb933;
+     minimum-size: -1 8mm;
+     preferred-size: -1 8mm;
+     maximum-size: -1 8mm;
+
+     margin-left: 1;
+     margin-top: 0;
+     margin-right: 1;
+     margin-bottom: 0;
+     padding-left: 0;
+     padding-top: 0;
+     padding-right: 0;
+     padding-bottom: 0;
+}
+
+
+#TopToolbarButtonInactive {
+      background-image: "landscape-topbar-tab-normal-bg";
+      text-color: #d6d6d6;
+      font: "Droid Sans" 2mm;
+      minimum-size: -1 8mm;
+      preferred-size: -1 8mm;
+      maximum-size: -1 8mm;
+      margin-left: 1;
+      margin-top: 0;
+      margin-right: 1;
+      margin-bottom: 0;
+      padding-left: 0mm;
+      padding-top: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+}
+
+#BottomOverlay {
+		background-image: "landscape-playerbar-bg";
+        background-color:;
+        /* background-opacity:0.0; */
+
+		minimum-size: 864px 66px;
+		preferred-size: 864px 66px;
+		maximum-size: 864px 66px;
+
+		margin-left: 0;
+		margin-top: 0;
+		margin-right: 0;
+		margin-bottom: 0;
+		padding-left: 0;
+		padding-top: 0;
+		padding-right: 0;
+		padding-bottom: 0;
+
+		text-margin-left: 0;
+		text-margin-top: 0;
+		text-margin-right: 0;
+		text-margin-bottom: 0;
+
+    	vertical-align: bottom;
+    	horizontal-align: left;
+        offset: 0 0;
+}
+
+#shareBottomToolbar {
+		background-image: "landscape-playerbar-bg";
+        background-color:;
+        /* background-opacity:0.0; */
+
+		minimum-size: 864px 66px;
+		preferred-size: 864px 66px;
+		maximum-size: 864px 66px;
+
+		margin-left: 0;
+		margin-top: 0;
+		margin-right: 0;
+		margin-bottom: 0;
+		padding-left: 0;
+		padding-top: 0;
+		padding-right: 0;
+		padding-bottom: 0;
+
+		text-margin-left: 0;
+		text-margin-top: 0;
+		text-margin-right: 0;
+		text-margin-bottom: 0;
+
+    	vertical-align: bottom;
+    	horizontal-align: left;
+        offset: 0 0;
+}
+
+#slideShowButton {
+		background-image:"button-play-normal";
+		background-color:;
+
+		minimum-size: 33px 33px;
+		preferred-size: 33px 33px;
+		maximum-size: 33px 33px;
+
+		margin-left: 15px;
+		margin-top: 16px;
+		margin-right: 0;
+		margin-bottom: 0;
+		padding-left: 0;
+		padding-top: 0;
+		padding-right: 0;
+		padding-bottom: 0;
+}
+
+#cameraButton {
+		background-image:"button-camera-normal";
+		background-color:;
+
+		minimum-size: 33px 33px;
+		preferred-size: 33px 33px;
+		maximum-size: 33px 33px;
+		margin-left: 15px;
+		margin-top: 16px;
+		margin-right: 0;
+        padding-left: 0;
+}
+
+#bottomPanel1 {
+    background-image:"bottom_bar_panel1-";
+    background-color:;
+    minimum-size: 326px 59px;
+    preferred-size: 326px 59px;
+	maximum-size: 326px 59px;
+
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#bottomPanel2 {
+    background-image:"bottom_bar_panel2-";
+    background-color:;
+    minimum-size: 282px 59px;
+    preferred-size: 282px 59px;
+	maximum-size: 326px 59px;
+
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#mailButton {
+    background-image:"mail_button_norm";
+    background-color:;
+    minimum-size: 92px 59px;
+    preferred-size: 92px 59px;
+	maximum-size: 92px 59px;
+
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+#BottomToolbarButton {
+		background-image:;
+		background-color:;
+
+		minimum-size: -1 4mm;
+		preferred-size: -1 4mm;
+		maximum-size: -1 4mm;
+
+		margin-left: 0;
+		margin-top: 0.5mm;
+		margin-right: 0;
+		margin-bottom: 0;
+		padding-left: 0;
+		padding-top: 0;
+		padding-right: 0;
+		padding-bottom: 0;
+    	
+}
+
+#viewportPhotos.Landscape {
+    minimum-size: 864px 385px;
+    preferred-size: 864px 385px;
+    maximum-size: 864px 385px;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0px;
+    margin-bottom: 0;
+    padding-left: 0px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    vertical-align: top;
+  
+    background-color: #dadcd9;
+}
+
+#viewportPhotos.Portrait {
+    minimum-size: 480px 768px;
+    preferred-size: 480px 768px;
+    maximum-size: 480px 768px;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0px;
+    margin-bottom: 0;
+    padding-left: 0px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    vertical-align: top;
+  
+    background-color: #dadcd9;
+}
+
+#albumList {
+  minimum-size: 100% 100%;
+  maximum-size: 100% 100%;
+  preferred-size: 100% 100%; /*seems not working here */
+  background-color: #dadcd9;
+
+  margin-left:  0; 
+  margin-right:  0;
+  margin-top:    0;
+  margin-bottom: 0; 
+
+  padding-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+#allAlbumsViewport.Landscape {
+    minimum-size: 864px 387px;
+    preferred-size: 864px 387px;
+    maximum-size: 864px 387px;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    vertical-align: top;
+  
+    background-color: #dadcd9;
+}
+
+#allAlbumsViewport.Portrait {
+    minimum-size: 480px 768px;
+    preferred-size: 480px 768px;
+    maximum-size: 480px 768px;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    vertical-align: top;
+  
+    background-color: #dadcd9;
+}
+
+#albumlList {
+  minimum-size: 100% 100%;
+  maximum-size: 100% 100%;
+  preferred-size: 100% 100%;
+
+  margin-left:  0; 
+  margin-right:  0;
+  margin-top:    0;
+  margin-bottom: 0; 
+
+  padding-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+#albumThumbnail_Landscape {
+  minimum-size: 432px 108px;
+  preferred-size: 432px 108px;
+  maximum-size: 432px 108px;
+
+  image-object-name: "albumThumbnailImage";
+  title-object-name: "albumLabel";
+  subtitle-object-name: "albumLabel";
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  margin-left:  0; 
+  margin-right:  0;
+  margin-top:    0;
+  margin-bottom: 0; 
+
+  background-image:"album_thumbnail_bg";
+  background-color:;
+/*  background-opacity: 0.0; */
+
+}
+
+#albumThumbnail_Portrait {
+  minimum-size: 240px 108px;
+  preferred-size: 240px 108px;
+  maximum-size: 240px 108px;
+
+  image-object-name: "albumThumbnailImage";
+  title-object-name: "albumLabel";
+  subtitle-object-name: "albumLabel";
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  margin-left:  0; 
+  margin-right:  0;
+  margin-top:    0;
+  margin-bottom: 0; 
+
+  background-image:"album_thumbnail_bg";
+  background-color:;
+/*  background-opacity: 0.0; */
+
+}
+
+
+@const ALBUM_THUMBNAIL_SIZE: 108px;
+#albumThumbnailImage {
+  /* inherited from DuiWidgetStyle */
+  minimum-size: $ALBUM_THUMBNAIL_SIZE $ALBUM_THUMBNAIL_SIZE;
+  preferred-size: $ALBUM_THUMBNAIL_SIZE $ALBUM_THUMBNAIL_SIZE;
+  maximum-size: $ALBUM_THUMBNAIL_SIZE $ALBUM_THUMBNAIL_SIZE;
+
+  margin-left:  0; 
+  margin-right:  0;
+  margin-top:    0;
+  margin-bottom: 0; 
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+
+}
+
+#albumLabel {
+    font: "Droid Sans" 16px;
+    color: #667786;
+    margin-left:  12px; 
+    background-image:;
+    background-color:;
+  /* margin-right:  0;
+  margin-top:    0;
+  margin-bottom: 0;  */
+
+}
+
+#albumInfoContainer {
+  minimum-size: 864px 59px;
+  maximum-size: 864px 59px;
+  preferred-size: 864px 59px;
+  background-color: ;
+  background-image:"landscape-crumbbar-bg"; 
+  background-opacity: 1.0;
+
+  margin-left:  0; 
+  margin-right:  0px;
+  margin-top:    0px;
+  margin-bottom: 0; 
+
+  padding-left: 0;
+  padding-top: 0;
+  padding-right: 0px;
+  padding-bottom: 0;
+}
+
+#vSeparator {
+    
+  minimum-size: 30px 53px;
+  maximum-size: 30px 53px;
+  preferred-size: 30px 53px;
+
+
+  margin-left:  0; 
+  margin-right:  0;
+  margin-top:    0;
+  margin-bottom: 0; 
+  padding-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  vertical-align: top;
+
+}
+
+#allAlbumButtonInInfoContainer {
+        background-color:;
+        background-image:;
+        font: "Droid Sans" 16px;
+        color: #feffff;
+        minimum-size: -1 59px;
+        preferred-size: -1 59px;
+        maximum-size: -1 59px;
+
+        margin-left: 0;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        padding-left: 10px;
+        padding-top: 0;
+        padding-right: 0px;
+        padding-bottom: 0;
+}
+
+#albumInfoButtonInInfoContainer {
+    background-color:;
+    background-image:;
+    font: "Droid Sans" 16px;
+    color: #feffff;
+    minimum-size: -1 59px;
+    preferred-size: -1 59px;
+    maximum-size: -1 59px;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 10px;
+    padding-top: 0;
+    padding-right: 10px;
+    padding-bottom: 0;
+}
+
+#photoInfoButtonInInfoContainer {
+    background-color:;
+    background-image:;
+    font: "Droid Sans" 16px;
+    color: #feffff;
+    minimum-size: -1 59px;
+    preferred-size: -1 59px;
+    maximum-size: -1 59px;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 10px;
+    padding-top: 0;
+    padding-right: 10px;
+    padding-bottom: 0;
+}
+
+#photosInOneAlbumList {
+    minimum-size: 100% 100%;
+    maximum-size: 100% 100%;
+    preferred-size: 100% 100%;
+
+    margin-left:  0;
+    margin-right:  1mm;
+    margin-top:    0;
+    margin-bottom: 0;
+
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+}
+
+#viewportAlbum.Landscape {
+    minimum-size: 864px 340px;
+    preferred-size: 864px 340px;
+    maximum-size: 864px 340px;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+#viewportAlbum.Portrait {
+    minimum-size: 480px 730px;
+    preferred-size: 480px 730px;
+    maximum-size: 480px 730px;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+#searchInput {
+    minimum-size: 80% 5mm;
+    preferred-size: 80% 5mm;
+    maximum-size: 80% 5mm;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    vertical-align: center;
+}
+
+#startSearch {
+    font: "Droid Sans" 2mm;
+    minimum-size: -1 4mm;
+    preferred-size: -1 4mm;
+    maximum-size: -1 4mm;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    vertical-align: center;
+
+}
+
+#searchButtonInactive {
+    background-image:"toolbar-search-normal2";
+    background-color:;
+
+    minimum-size: 74px 75px;
+    preferred-size: 74px 75px;
+    maximum-size: 74px 75px;
+    vertical-align: top;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+ }
+
+#searchButtonActive {
+    background-image: "toolbar-search-down";
+    background-color:;
+
+    minimum-size: 74px 75px;
+    preferred-size: 74px 75px;
+    maximum-size: 74px 75px;
+    vertical-align: top;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+ }
+
+#closeButtonInactive {
+    background-image: "close3";
+    background-color:;
+
+    minimum-size: 74px 75px;
+    preferred-size: 74px 75px;
+    maximum-size: 74px 75px;
+    vertical-align: center;
+
+    margin-left: 0;
+    margin-top: 0px;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+ }
+
+#closeButtonActive {
+    background-image: "close_button_lit";
+    background-color:;
+
+    minimum-size: 71px 62px;
+    preferred-size: 71px 62px;
+    maximum-size: 71px 62px;
+    vertical-align: top;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+ }
+
+#loadingSpinner {
+    minimum-size: 60px 60px;
+    preferred-size: 60px 60px;
+    maximum-size: 60px 60px; 
+
+    margin-left: 24px;
+    margin-top: 24px;
+    speed: 10;
+    active-element-count: 1;
+    element-size: 10px;
+    element-distance: 0.3;
+
+}
+
+#deleteConfirmDialog {
+    vertical-align: center;
+    offset: 0 -80px;
+}
+
+#searchOverlay {
+		background-image: "landscape-playerbar-bg";
+        background-color:;
+        /* background-opacity:0.0; */
+
+		minimum-size: 864px 66px;
+		preferred-size: 864px 66px;
+		maximum-size: 864px 66px;
+
+		margin-left: 0;
+		margin-top: 0;
+		margin-right: 0;
+		margin-bottom: 0;
+		padding-left: 0;
+		padding-top: 0;
+		padding-right: 0;
+		padding-bottom: 0;
+
+		text-margin-left: 0;
+		text-margin-top: 0;
+		text-margin-right: 0;
+		text-margin-bottom: 0;
+
+    	vertical-align: bottom;
+    	horizontal-align: left;
+        offset: 0 0;
+}
+
+#searchDoButton {
+    background-image:;
+    background-color: #212121;
+
+    minimum-size: 150px 62px;
+    preferred-size: 150px 62px;
+    maximum-size: 150px 62px;
+    vertical-align: top;
+
+    margin-left: 0;
+    margin-top: 2px;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+ }
+
+#viewportInSearch.Landscape {
+    minimum-size: 864px 378px;
+    preferred-size: 864px 378px;
+    maximum-size: 864px 378px;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0px;
+    margin-bottom: 0;
+    padding-left: 0px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    vertical-align: top;
+  
+    background-color: #dadcd9;
+}
+
+#viewportInSearch.Portrait {
+    minimum-size: 480px 730px;
+    preferred-size: 480px 730px;
+    maximum-size: 480px 730px;
+
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0px;
+    margin-bottom: 0;
+    padding-left: 0px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    vertical-align: top;
+  
+    background-color: #dadcd9;
+}
+
+#photosButtonInSearch {
+		background-image:;
+		background-color:#707070;
+
+		minimum-size: 150px 40px;
+		preferred-size: 150px 40px;
+		maximum-size: 150px 40px;
+
+		margin-left: 0;
+		margin-top: 0;
+		margin-right: 0;
+		margin-bottom: 0;
+		padding-left: 0;
+		padding-top: 0;
+		padding-right: 0;
+		padding-bottom: 0;
+}
+
+#albumsButtonInSearch {
+		background-image:;
+		background-color:#707070;
+
+		minimum-size: 150px 40px;
+		preferred-size: 150px 40px;
+		maximum-size: 150px 40px;
+
+		margin-left: 0;
+		margin-top: 0;
+		margin-right: 0;
+		margin-bottom: 0;
+		padding-left: 0;
+		padding-top: 0;
+		padding-right: 0;
+		padding-bottom: 0;
+}
+
+@const SOCIALUPLOADER_GRID_SIZE: 108px;
+#imgWidgetSocialUploaderPage {
+  /* inherited from DuiWidgetStyle */
+  minimum-size: $SOCIALUPLOADER_GRID_SIZE $SOCIALUPLOADER_GRID_SIZE;
+  preferred-size: $SOCIALUPLOADER_GRID_SIZE $SOCIALUPLOADER_GRID_SIZE;
+  maximum-size: $SOCIALUPLOADER_GRID_SIZE $SOCIALUPLOADER_GRID_SIZE;
+
+  margin-left:  0; 
+  margin-right:  0;
+  margin-top:    0;
+  margin-bottom: 0; 
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+
+}
+
+#imgGridContainer {
+    minimum-size: 400px -1;
+    preferred-size: 400px -1;
+    maximum-size: 400px -1;
+}
+
+#titleLabelInSocialUploaderPage {
+    color: #dadcd9;
+}
+
+#nameLabelInSocialUploaderPage {
+    color: #dadcd9;
+    font: "Droid Sans" 2mm;
+    vertical-align: top;
+    margin-left:  0; 
+  margin-right:  0;
+  margin-top:    0;
+  margin-bottom: 0; 
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+
+
+}
+#remainIndicatorInSocialUploaderPage {
+    color: #dadcd9;
+    word-wrap: true;
+    font: "Droid Sans" 2mm;
+    minimum-size: $SOCIALUPLOADER_GRID_SIZE $SOCIALUPLOADER_GRID_SIZE;
+    preferred-size: $SOCIALUPLOADER_GRID_SIZE $SOCIALUPLOADER_GRID_SIZE;
+    maximum-size: $SOCIALUPLOADER_GRID_SIZE $SOCIALUPLOADER_GRID_SIZE;
+}
+*/
+#nameTextEdit {
+/*    font: "Droid Sans" 2mm;
+    color: #dadcd9;
+    background-color: #dadcd9;
+    background-image:;
+  */  
+    preferred-size: 30px, 30px;
+    maximum-size: 30px, 30px; 
+    minimum-size: 30px, 30px; 
+ /*
+    margin-left:  0; 
+  margin-right:  0;
+  margin-top:    0px;
+  margin-bottom: 10px; 
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+*/
+
+}

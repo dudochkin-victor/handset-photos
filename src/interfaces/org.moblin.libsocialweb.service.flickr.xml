@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node name="/com/meego/libsocialweb/Service/flickr">
+    <interface name="com.meego.libsocialweb.PhotoUpload">
+	<method name="UploadPhoto">
+	    <annotation name="com.trolltech.QtDBus.QtTypeName.In1" value="FlickrStruct"/>
+	    <arg name="local_filename" type="s" direction="in"/>
+	    <arg name="fields" type="a{ss}" direction="in"/>
+	    <arg name="opid" type="i" direction="out"/>
+        </method>
+	<signal name="PhotoUploadProgress">
+	    <arg type="i"/>
+	    <arg type="i"/>
+	    <arg type="s"/>
+	</signal>
+    </interface>
+</node>
+
